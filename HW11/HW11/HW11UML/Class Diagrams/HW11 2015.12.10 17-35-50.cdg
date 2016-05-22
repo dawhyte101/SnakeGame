@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HW11">
+  <ClassDiagramComponents>
+    <Class name="Board" package="hw11" visibility="public" xPosition="20.0" yPosition="-58.0">
+      <Fields>
+        <Field name="dataSource" type="DataSource" visibility="package"/>
+        <Field name="jdbc" type="JdbcHelper" visibility="package"/>
+        <Field name="B_WIDTH" type="int" visibility="private" isFinal="true"/>
+        <Field name="B_HEIGHT" type="int" visibility="private" isFinal="true"/>
+        <Field name="DOT_SIZE" type="int" visibility="private" isFinal="true"/>
+        <Field name="ALL_DOTS" type="int" visibility="private" isFinal="true"/>
+        <Field name="RAND_POS" type="int" visibility="private" isFinal="true"/>
+        <Field name="DELAY" type="int" visibility="private" isFinal="true"/>
+        <Field name="x" type="int" visibility="private" isFinal="true"/>
+        <Field name="y" type="int" visibility="private" isFinal="true"/>
+        <Field name="dots" type="int" visibility="private"/>
+        <Field name="apple_x" type="int" visibility="private"/>
+        <Field name="apple_y" type="int" visibility="private"/>
+        <Field name="score" type="int" visibility="private"/>
+        <Field name="leftDirection" type="boolean" visibility="private"/>
+        <Field name="rightDirection" type="boolean" visibility="private"/>
+        <Field name="upDirection" type="boolean" visibility="private"/>
+        <Field name="downDirection" type="boolean" visibility="private"/>
+        <Field name="inGame" type="boolean" visibility="private"/>
+        <Field name="timer" type="Timer" visibility="private"/>
+        <Field name="ball" type="Image" visibility="private"/>
+        <Field name="apple" type="Image" visibility="private"/>
+        <Field name="head" type="Image" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="loadImages" returnType="void" visibility="private"/>
+        <Method name="initGame" returnType="void" visibility="private"/>
+        <Method name="paintComponent" returnType="//Paints the snake void" visibility="public">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="doDrawing" returnType="void" visibility="private">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="gameOver" returnType="void" visibility="private">
+          <Argument type="Graphics" name="g"/>
+        </Method>
+        <Method name="checkApple" returnType="void" visibility="private"/>
+        <Method name="move" returnType="void" visibility="private"/>
+        <Method name="checkCollision" returnType="void" visibility="private"/>
+        <Method name="locateApple" returnType="void" visibility="private"/>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HW11" package="hw11" visibility="public" xPosition="436.0" yPosition="20.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
